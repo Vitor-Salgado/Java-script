@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qual a soma!?</title>
+    <style>
+        input{
+            width: 100px;
+        }
+        div{
+            padding:  10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Qual a soma entre..</h1>
+    <input type="number" name="txn1" id="in1"> +
+    <input type="number" name="txn2" id="in2">
+    <input type="button" value="Soma" onclick="somar()">
+    <div id="soma"> resltado e ....</div>
+    
+    <script>
+        function somar(){ 
+        var tn1 = window.document.getElementById('in1')
+        var tn2 = window.document.getElementById('in2')
+        var soma = window.document.getElementById('soma')
+        var n1 = Number(tn1.value)
+        var n2 = Number(tn2.value)
+        var s = n1 + n2
+        soma.innerHTML=(`O Valor de ${n1} + ${n2} e igual a <strong>${s}</strong>`)
+    }
+    </script>
+</body>
+</html>

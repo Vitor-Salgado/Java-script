@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passo DOM</title>
+</head>
+<body>
+    <h1>Primeiros passo DOM</h1>
+    <p>Como esse passos</p>
+    <p>aprender <strong>DOM</strong> e facil</p>
+    <div>Clique aqui</div>
+
+    <script>
+        var p1 = window.document.getElementsByTagName('p')[0]
+       window.document.write(p1.innerText)
+       p1.style.color = 'blue'
+       p1.style.backgroundColor= 'gray'   </script>
+</body>
+</html>

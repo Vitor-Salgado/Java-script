@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Velocidade</title>
+</head>
+<body>
+    <h1>Qual a sua velocidade?</h1>
+    <label for="ivel">Qual sua Velocidade</label>
+    <input type="number" name="vel" id="ivel">
+    <input type="button" value="Enviar" onclick="aviso()">
+    <div id="res"></div>
+
+    <script>
+        function aviso(){
+            var vel = window.document.getElementById('ivel')
+            var r = window.document.getElementById('res')
+            var velo = Number(vel.value)
+            r.innerHTML=`<p>Sua Velocidade e de ${velo}km/h</p>`
+            if(velo > 60){
+            r.innerHTML+= '<p>voce ultrapassou o limite de velocidade,sera <strong>MULTADO</strong></p>' 
+            }
+            r.innerHTML+='<p>Use sempre o cinto de segurança</p>'
+        }
+
+    </script>
+</body>
+</html>
