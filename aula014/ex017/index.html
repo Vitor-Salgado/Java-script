@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela</title>
+    <link rel="stylesheet" href="estilo/style.css">
+</head>
+<body>
+    <header>
+        <h1>Gerador de tabela</h1>
+    </header>
+    <main>
+        <div>
+            <p><label for="inum"><strong>Numero:</strong></label>
+            <input type="number" name="num" id="inum" required>
+            <input type="button" value="Gerar tabela" onclick='tabela()'>
+            </p>
+        </div>
+        <div>
+            <select name="tabuada" id="res" size="10">
+                <option>Digite um numero a cima...</option>
+            </select>
+        </div>
+    </main>
+    <footer>
+        <p>
+            Criado por <a href="https://www.instagram.com/vitor.salgado.vs/"target='_blank'>@Vitor Salgado</a>
+        </p>
+    </footer>
+    <script src="java/funçao.js"></script>
+</body>
+</html>
